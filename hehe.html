@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday, My Love!</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #d63384;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .slideshow-container {
+      position: relative;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .slide {
+      display: none;
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+    }
+    .reveal-btn {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+    .reveal-btn:hover {
+      background-color: #ff1493;
+    }
+    .letter {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: #ffe4e1;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: none;
+    }
+    .letter h2 {
+      color: #d63384;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Kala mo wala akong gift noh?</h1>
+
+  <div class="slideshow-container">
+    <div class="slide"><img src="memory 1.jpg" alt="Malalandi"></div>
+    <div class="slide"><img src="memory 2.jpg" alt="Malalandi"></div>
+    <div class="slide"><img src="memory 4.jpg" alt="Malalandi"></div>
+   <div class="slide"><img src="memory 3.jpg" alt="Malalandi"></div>
+    <div class="slide"><img src="memory 5.jpg" alt="Malalandi"></div>
+    <div class="slide"><img src="memory 6.jpg" alt="Malalandi"></div>
+    <div class="slide"><img src="memory 7.jpg" alt="Malalandi"></div>
+    <!-- Add more slides if you want -->
+  </div>
+
+  <button class="reveal-btn" onclick="revealLetter()">Open Love Letter 💌</button>
+
+  <div class="letter" id="loveLetter">
+    <h2>SURPRISEEEEEEEE</h2>
+    <p>
+     🥳<br><br>
+      You're probably reading this after thinking na wala akong binigay sayo and Im sorry if ito lang muna and I promise I will make it up to you. Its our third year that we’ll celebrate your birthday together, Im so happy that ever since we’ve met nasa tabi mo ako icelebrate ang birthday mo, I know na I dont write letters but for now this will be my gift for you and I know you will love it, I love you more than my life you are the only one that I precious the most. I know weve been through a lot lately and I always say this na “nandito lang ako”. Those words really hits different when you know na yung taong sasamahan mo lagi is yung taong makakasama mo through ups and down. I really appreciate your presence you are the best thing happened to me. I love you so much. I know na I cant really show off to you when it come to art or letters. All I know is lahat ng sinusulat ko dito is galing lahat sa loob ko and I wont let you birthday pass without giving something special to you. Thank you for everything mahal ikaw ang pinaka thoughtful, caring, loving, pure na tao na nakilala ko. Ever since nung nag kakilala tayo I can really see how pure you are mahal even though I made mistakes on our relationship you still manages to love me purely. I hope mahal you wont give up on your life kahit na sobrang hirap ng buhay lately just know na I’m here and you have a lot to prove. Alam mo naman lagi kong sinasabi. “gusto kita makitang maging succesful” lagi ko sinasabi yan kasi I really beleive in you and I know you can pull it of as long as nasa tabi mo ako. I really want the best for you mahal lahat ng kaya ko iimagine naiimagine ko na gingawa natin na gustong gusto mo, like taking you out on dates, eating with you, photobooth natin, family outings, mga times na magkatabi matulog and magkausap sa chat. Those moments is what I precious the most. Ikaw ang una at huli kong mapaparamdam ntong pag mamahal kong ito. Hindi ko na kayang mag mahal ng iba kasi you became my standard na, and you put me in a situation na kung hindi lang rin naman ikaw wag na lang, I love you so much and Happy Happy birthday mahal ENJOY YOUR DAY <br><br>
+      I love you endlessly. ❤️
+    </p>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // 3 seconds
+    }
+
+    function revealLetter() {
+      document.getElementById("loveLetter").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
